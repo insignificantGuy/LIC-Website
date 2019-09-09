@@ -1,0 +1,349 @@
+body{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+#lic{
+    height:60%;
+    width:70%; 
+    margin-top:20px; 
+    margin-left: 20px;
+}
+.contact{
+    font-size:18px;
+}
+
+#heading{
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+.info{
+    display: flex;
+}
+.info > div{
+    margin-left:50px;
+    height: 100%;
+    width: 33%;
+}
+#bar{
+    width: 100%;
+    height: 401px;
+}
+#bar > img{
+    height: 400px;
+    z-index: -1;
+    position: relative;
+}
+#firstp{
+    margin-top:0px;
+    z-index: -1;
+    position: relative;    
+}
+#secondp{
+    margin-top:-400px;
+    width: 100%;
+    z-index: -1;
+    position: relative;   
+}
+#thirdp{
+    margin-top:-400px;
+    width: 100%; 
+    z-index: -1;
+    position: relative;
+}
+#fourthp{
+    margin-top:-400px;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+
+}
+#form{
+    height: 350px;
+    width: 300px;
+    margin-left: 950px;
+    margin-top:-383px;
+    background: #2f2fff;
+    color: white;
+    text-align: center;
+    border-radius:20px;
+}
+
+form input{
+    margin-top:10px;
+    height: 30px;
+    width: 250px;
+    border-style: none;
+    border-radius: 3px;
+}
+form button{
+    border-radius: 10px;
+    margin-top:10px;
+    height: 30px;
+    width: 250px;
+    border-style: none;
+}
+.footer{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    background:#2d2d2d;
+    color: white;
+    bottom: 0%;
+    padding: 20px;
+}
+.side{
+    margin-right:100px;
+}
+.footer > section{
+    width: 33%;
+    height: 100%;
+}       
+.footer > section li{
+    list-style: none;
+    margin-top: 3px;
+    margin-left:0px;
+}
+.policies{
+    display: flex;
+}
+.image,.names{
+    height: 300px;
+    width: 400px;
+    margin:40px;
+
+}
+.image > img{
+    height: 300px;
+    width: 500px;
+}
+.names > ul li{
+    list-style: none;
+    margin-top:10px;
+}
+.names > h2{
+    padding-left:10px;
+}
+#policy{
+    display: flex;
+}
+.enquiry{
+    width: 300px;
+    background-color: rgb(35, 82, 124);
+    color: white;
+    padding: 20px;
+    margin-top:40px;
+    margin-left:-10px;
+}
+.enquiry > img{
+    height: 200px;
+    width:270px;
+}
+.policies > div h2{
+    margin-left:20px;
+} 
+#check > form button{
+    background-color: #ff8000;
+    border-style: none;
+    border-radius: 16px;
+}
+a{
+    text-decoration: none;
+}
+#back{
+    width:150px;
+    border-radius:45%;
+    background-color: #ff9224;
+    border-style: none;
+    margin-bottom:20px;
+    margin-top:20px;
+    margin-left:85%;
+}
+a:link{
+    color:black;
+}
+v:link{
+    color: black;
+}
+table{
+    border:2px solid black;
+    background-color:#d4d4d4; 
+    margin-left:3%;
+    border-radius: 10px;
+    margin-bottom:40px;
+}
+th{
+    background-color: #679bf1;
+}
+
+@media only screen and (max-width:800px){
+    body{
+        height: 100%;
+        width:100%;
+    }
+    #bar{
+        display:none;
+    }
+    .image > img,.image{
+        height:200px;
+        width:300px;
+    }
+    .names{
+        margin-left:-20px;
+    }
+    .names > h2{
+        font-size:18px;
+        font-style: bold;
+    }
+    .names > ul li{
+        font-size:14px;
+    }
+    .footer > h2{
+        font-size:18px;
+    }
+    .footer > span{
+        font-size:14px;
+    }
+    .footer{
+        bottom:0;
+    }
+    #lic{
+        width:40%;
+    }
+    .contact{
+        font-size:14px;
+    }
+    #heading{
+        display:block;
+    }
+    #policy{
+        display:flex;
+    }
+}
+
+@media only screen and (max-width:640px){
+    body{
+        height: 100%;
+        width:100%;
+    }
+    #bar{
+        display:none;
+    }
+    .image > img,.image{
+        height:200px;
+        width:200px;
+    }
+    .names{
+        margin-left:-50px;
+    }
+    .names > h2{
+        font-size:16px;
+        font-style: bold;
+    }
+    .names > ul li{
+        font-size:12px;
+    }
+    .footer > ul li{
+        font-size:10px;
+    }
+    .footer > section > h2{
+        font-size:12px;
+        text-align:center;
+    }
+    .contact{
+        font-size:8px;
+    }
+    .footer > section span{
+        font-size:10px;
+    }
+    .footer{
+        bottom:0;
+        margin-top:40px;
+    }
+    #lic{
+        width:20%;
+    }
+    #heading{
+
+        display:block;
+    }
+    #policy{
+        display:block;
+    }
+    #form{
+        height: 350px;
+        width: 300px;
+        margin-left: 30%;
+        margin-top:100px;
+        background: #2f2fff;
+        color: white;
+        text-align: center;
+        border-radius:20px;
+    }
+    
+    form input{
+        margin-top:10px;
+        height: 20px;
+        width: 180px;
+        border-style: none;
+        border-radius: 3px;
+    }
+    form button{
+        border-radius: 10px;
+        margin-top:10px;
+        height: 20px;
+        width: 180px;
+        border-style: none;
+    }
+    .side{
+        margin-left:10px;
+        margin-right:0px;
+        display:flex;
+    }
+    .enquiry{
+        width: 30%;
+        height:600px;
+        background-color: rgb(35, 82, 124);
+        color: white;
+        padding: 20px;
+        margin-top:40px;
+        margin-left:10px;
+    }
+    .enquiry > h2{
+        font-size:14px;
+    }
+    .enquiry > p{
+        font-size:12px;
+    }
+    .enquiry > img{
+        height: 100px;
+        width:130px;
+    }
+    .checke{
+        width:100px;
+        font-size:14px;
+        margin-left:10px;
+    }
+    #name > p{
+        font-size:8px;
+    }
+    #check,#firste,#name{
+        height:300px;
+    }
+    #firste > h2{
+        font-size:16px;
+    }
+    #firste > p{
+        font-size:16px;
+    }
+    #firste,#name,#check > p{
+        text-align: center;
+    }
+    #name:hover{
+        height:500px;
+    }
+    #name > p:hover{
+        font-size:12px;
+    }
+}

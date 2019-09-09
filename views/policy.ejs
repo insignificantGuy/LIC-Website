@@ -1,0 +1,107 @@
+<!doctype HTML>
+
+<head>
+    <title>
+        policy
+    </title>
+    <link rel="stylesheet" href="../stuff/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+
+<body>
+    <%- include('header') %>
+    <form method="POST">
+        <span>Policy Name: </span>
+        <select name="policy">
+            <option>Endownment Plans</option>
+            <option>Money Back Plans</option>
+            <option>Child Plans</option>
+            <option>Term Plans</option>
+            <option>Pension Plans</option>
+            <option>Single Premium Plans</option>
+            <option>Unit Linked Plans</option>
+            <option>Health Plans</option>
+            <option>Jeevan Shiromani Plans</option>
+        </select>
+        <button type="submit" name="button" value="button" style="width:80px;">Search</button>
+        <br>
+        <br>
+        <% if(user!=null){ %>
+        <span>Select Policy Sub-Type: </span>
+        <select name="sub">
+            <% for(var i=0;i< ad.length;i++){ %>
+            <option><%=ad[i].subpolicy%></option>
+            <% } %>
+        </select>
+        <button type="submit" name="check" value="check" style="width:80px;">Go</button>
+        <% } %>
+        <br>
+        <br>
+        <% if(deta!=null&&det!=null){ %>
+            <table>
+                <tr>
+                    <th colspan="2"><%=det[0].sub%></th>
+                </tr>
+                <tr>
+                    <td>Minimum Age:</td>
+                    <td><%=det[0].minage%></td>
+                </tr>
+                <tr>
+                    <td>Maximum Age:</td>
+                    <td><%=det[0].maxage%></td>
+                </tr>
+                <tr>
+                    <td>Maximum Maturity Age:</td>
+                    <td><%=det[0].maxmat%></td>
+                </tr>
+                <tr>
+                    <td>Policy Term:</td>
+                    <td><%=det[0].term%></td>
+                </tr>
+                <tr>
+                    <td>Minimum Sum:</td>
+                    <td><%=det[0].minsum%></td>
+                </tr>
+                <tr>
+                    <td>Maximum Sum:</td>
+                    <td><%=det[0].maxsum%></td>
+                </tr>
+                <tr>
+                    <td>Premium Payment Method</td>
+                    <td><%=det[0].prepay%></td>
+                </tr>
+                <tr>
+                    <td>Loan:</td>
+                    <td><%=det[0].loan%></td>
+                </tr>
+                <tr>
+                    <td>Surrender:</td>
+                    <td><%=det[0].surr%></td>
+                </tr>
+                <tr>
+                    <td>On Death:</td>
+                    <td><%=det[0].ondeath%></td>
+                </tr>
+                <tr>
+                    <td>On Maturity:</td>
+                    <td><%=det[0].onmat%></td>
+                </tr>
+                <tr>
+                    <td>After Maturity:</td>
+                    <td><%=det[0].aftmat%></td>
+                </tr>
+                <tr>
+                    <td>Income Tax Benefits:</td>
+                    <td><%=det[0].inctax%></td>
+                </tr>
+            </table>
+            <%}else if(det==null){%>
+                
+                <%}%>
+            </form>
+    <button type="submit" id="back"><a href="/">Visit Main Website</a></button>
+    <button type="submit" id="back" style="height: 40px;"><a href="/check">Reset</a></button>
+    <%- include('footer') %>
+</body>
